@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6506D4D61E617D310052B57E /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506D4D51E617D310052B57E /* NetworkController.swift */; };
+		6506D4DE1E6184180052B57E /* AddProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506D4DC1E6184180052B57E /* AddProductTableViewCell.swift */; };
+		6506D4DF1E6184180052B57E /* AddProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6506D4DD1E6184180052B57E /* AddProductTableViewCell.xib */; };
+		6506D4E11E6199660052B57E /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506D4E01E6199660052B57E /* CheckoutViewController.swift */; };
+		6506D4FC1E61A1800052B57E /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506D4FB1E61A1800052B57E /* SimpleAlert.swift */; };
+		6506D4FE1E6207ED0052B57E /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506D4FD1E6207ED0052B57E /* CurrencyFormatter.swift */; };
+		6506D5001E6217610052B57E /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506D4FF1E6217610052B57E /* CurrencyFormatterTests.swift */; };
+		6506D5021E62193A0052B57E /* ProductControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506D5011E62193A0052B57E /* ProductControllerTests.swift */; };
+		6506D5041E621A270052B57E /* CurrencyControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506D5031E621A270052B57E /* CurrencyControllerTests.swift */; };
+		6506D5071E621A4B0052B57E /* TestNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506D5061E621A4B0052B57E /* TestNetworkController.swift */; };
+		6506D5091E621E140052B57E /* currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 6506D5081E621E140052B57E /* currencies.json */; };
+		6506D50B1E621E260052B57E /* exchangerates.json in Resources */ = {isa = PBXBuildFile; fileRef = 6506D50A1E621E260052B57E /* exchangerates.json */; };
+		6506D50C1E62203D0052B57E /* currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 6506D5081E621E140052B57E /* currencies.json */; };
+		6506D50D1E62203F0052B57E /* exchangerates.json in Resources */ = {isa = PBXBuildFile; fileRef = 6506D50A1E621E260052B57E /* exchangerates.json */; };
+		6506D50F1E6221DE0052B57E /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506D50E1E6221DE0052B57E /* ProductTests.swift */; };
+		65BB46C21E60AB7500D42631 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB46C11E60AB7500D42631 /* AddProductViewController.swift */; };
+		65D7A4DA1E6054D6002A59B2 /* BasketAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7A4D91E6054D6002A59B2 /* BasketAppDelegate.swift */; };
+		65D7A4DF1E6054D6002A59B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D7A4DD1E6054D6002A59B2 /* Main.storyboard */; };
+		65D7A4E41E6054D6002A59B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D7A4E21E6054D6002A59B2 /* LaunchScreen.storyboard */; };
+		65D7A4EF1E6054D6002A59B2 /* ShoppingBasketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7A4EE1E6054D6002A59B2 /* ShoppingBasketTests.swift */; };
+		65D7A4FA1E6054D6002A59B2 /* ShoppingBasketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7A4F91E6054D6002A59B2 /* ShoppingBasketUITests.swift */; };
+		65D7A50A1E60609B002A59B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D7A5091E60609B002A59B2 /* Assets.xcassets */; };
+		65D7A50C1E6060A1002A59B2 /* ShoppingBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7A50B1E6060A1002A59B2 /* ShoppingBasketViewController.swift */; };
+		65D7A50E1E6060BB002A59B2 /* Products.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65D7A50D1E6060BB002A59B2 /* Products.plist */; };
+		65D7A5111E6061A2002A59B2 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7A5101E6061A2002A59B2 /* Product.swift */; };
+		65D7A5131E6061DB002A59B2 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7A5121E6061DB002A59B2 /* Basket.swift */; };
+		65D7A5151E6061F2002A59B2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7A5141E6061F2002A59B2 /* Currency.swift */; };
+		65D7A51A1E6063BC002A59B2 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7A5191E6063BC002A59B2 /* ProductController.swift */; };
+		65D7A51C1E606AFF002A59B2 /* CurrencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7A51B1E606AFF002A59B2 /* CurrencyController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65D7A4EB1E6054D6002A59B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65D7A4CE1E6054D6002A59B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65D7A4D51E6054D6002A59B2;
+			remoteInfo = ShoppingBasket;
+		};
+		65D7A4F61E6054D6002A59B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65D7A4CE1E6054D6002A59B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65D7A4D51E6054D6002A59B2;
+			remoteInfo = ShoppingBasket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6506D4D51E617D310052B57E /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		6506D4DC1E6184180052B57E /* AddProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductTableViewCell.swift; sourceTree = "<group>"; };
+		6506D4DD1E6184180052B57E /* AddProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddProductTableViewCell.xib; sourceTree = "<group>"; };
+		6506D4E01E6199660052B57E /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		6506D4FB1E61A1800052B57E /* SimpleAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
+		6506D4FD1E6207ED0052B57E /* CurrencyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		6506D4FF1E6217610052B57E /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
+		6506D5011E62193A0052B57E /* ProductControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductControllerTests.swift; sourceTree = "<group>"; };
+		6506D5031E621A270052B57E /* CurrencyControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyControllerTests.swift; sourceTree = "<group>"; };
+		6506D5061E621A4B0052B57E /* TestNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNetworkController.swift; sourceTree = "<group>"; };
+		6506D5081E621E140052B57E /* currencies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currencies.json; sourceTree = "<group>"; };
+		6506D50A1E621E260052B57E /* exchangerates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exchangerates.json; sourceTree = "<group>"; };
+		6506D50E1E6221DE0052B57E /* ProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		65BB46C11E60AB7500D42631 /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		65D7A4D61E6054D6002A59B2 /* ShoppingBasket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingBasket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D7A4D91E6054D6002A59B2 /* BasketAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketAppDelegate.swift; sourceTree = "<group>"; };
+		65D7A4DE1E6054D6002A59B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65D7A4E31E6054D6002A59B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65D7A4E51E6054D6002A59B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D7A4EA1E6054D6002A59B2 /* ShoppingBasketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingBasketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D7A4EE1E6054D6002A59B2 /* ShoppingBasketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBasketTests.swift; sourceTree = "<group>"; };
+		65D7A4F01E6054D6002A59B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D7A4F51E6054D6002A59B2 /* ShoppingBasketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingBasketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D7A4F91E6054D6002A59B2 /* ShoppingBasketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBasketUITests.swift; sourceTree = "<group>"; };
+		65D7A4FB1E6054D6002A59B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D7A5091E60609B002A59B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65D7A50B1E6060A1002A59B2 /* ShoppingBasketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingBasketViewController.swift; sourceTree = "<group>"; };
+		65D7A50D1E6060BB002A59B2 /* Products.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Products.plist; sourceTree = "<group>"; };
+		65D7A5101E6061A2002A59B2 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		65D7A5121E6061DB002A59B2 /* Basket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
+		65D7A5141E6061F2002A59B2 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		65D7A5191E6063BC002A59B2 /* ProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
+		65D7A51B1E606AFF002A59B2 /* CurrencyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65D7A4D31E6054D6002A59B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D7A4E71E6054D6002A59B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D7A4F21E6054D6002A59B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6506D4D71E6183C60052B57E /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				6506D4DC1E6184180052B57E /* AddProductTableViewCell.swift */,
+				6506D4DD1E6184180052B57E /* AddProductTableViewCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		6506D4FA1E61A15F0052B57E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6506D4FB1E61A1800052B57E /* SimpleAlert.swift */,
+				6506D4FD1E6207ED0052B57E /* CurrencyFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6506D5051E621A300052B57E /* CurrencyController */ = {
+			isa = PBXGroup;
+			children = (
+				6506D5031E621A270052B57E /* CurrencyControllerTests.swift */,
+				6506D5061E621A4B0052B57E /* TestNetworkController.swift */,
+				6506D5081E621E140052B57E /* currencies.json */,
+				6506D50A1E621E260052B57E /* exchangerates.json */,
+			);
+			name = CurrencyController;
+			sourceTree = "<group>";
+		};
+		65D7A4CD1E6054D6002A59B2 = {
+			isa = PBXGroup;
+			children = (
+				65D7A4D81E6054D6002A59B2 /* ShoppingBasket */,
+				65D7A4ED1E6054D6002A59B2 /* ShoppingBasketTests */,
+				65D7A4F81E6054D6002A59B2 /* ShoppingBasketUITests */,
+				65D7A4D71E6054D6002A59B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65D7A4D71E6054D6002A59B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65D7A4D61E6054D6002A59B2 /* ShoppingBasket.app */,
+				65D7A4EA1E6054D6002A59B2 /* ShoppingBasketTests.xctest */,
+				65D7A4F51E6054D6002A59B2 /* ShoppingBasketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65D7A4D81E6054D6002A59B2 /* ShoppingBasket */ = {
+			isa = PBXGroup;
+			children = (
+				6506D4FA1E61A15F0052B57E /* Utilities */,
+				65D7A5161E6061F9002A59B2 /* Controllers */,
+				65D7A50F1E60618A002A59B2 /* Model */,
+				65D7A5081E606049002A59B2 /* Resources */,
+				65D7A5071E60603F002A59B2 /* ViewControllers */,
+				65D7A4D91E6054D6002A59B2 /* BasketAppDelegate.swift */,
+				65D7A4DD1E6054D6002A59B2 /* Main.storyboard */,
+				65D7A4E21E6054D6002A59B2 /* LaunchScreen.storyboard */,
+				65D7A4E51E6054D6002A59B2 /* Info.plist */,
+			);
+			path = ShoppingBasket;
+			sourceTree = "<group>";
+		};
+		65D7A4ED1E6054D6002A59B2 /* ShoppingBasketTests */ = {
+			isa = PBXGroup;
+			children = (
+				6506D5051E621A300052B57E /* CurrencyController */,
+				6506D4FF1E6217610052B57E /* CurrencyFormatterTests.swift */,
+				65D7A4EE1E6054D6002A59B2 /* ShoppingBasketTests.swift */,
+				6506D5011E62193A0052B57E /* ProductControllerTests.swift */,
+				65D7A4F01E6054D6002A59B2 /* Info.plist */,
+				6506D50E1E6221DE0052B57E /* ProductTests.swift */,
+			);
+			path = ShoppingBasketTests;
+			sourceTree = "<group>";
+		};
+		65D7A4F81E6054D6002A59B2 /* ShoppingBasketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65D7A4F91E6054D6002A59B2 /* ShoppingBasketUITests.swift */,
+				65D7A4FB1E6054D6002A59B2 /* Info.plist */,
+			);
+			path = ShoppingBasketUITests;
+			sourceTree = "<group>";
+		};
+		65D7A5071E60603F002A59B2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65D7A50B1E6060A1002A59B2 /* ShoppingBasketViewController.swift */,
+				65BB46C11E60AB7500D42631 /* AddProductViewController.swift */,
+				6506D4E01E6199660052B57E /* CheckoutViewController.swift */,
+				6506D4D71E6183C60052B57E /* CustomCells */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65D7A5081E606049002A59B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65D7A5091E60609B002A59B2 /* Assets.xcassets */,
+				65D7A50D1E6060BB002A59B2 /* Products.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		65D7A50F1E60618A002A59B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65D7A5101E6061A2002A59B2 /* Product.swift */,
+				65D7A5121E6061DB002A59B2 /* Basket.swift */,
+				65D7A5141E6061F2002A59B2 /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65D7A5161E6061F9002A59B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65D7A5191E6063BC002A59B2 /* ProductController.swift */,
+				65D7A51B1E606AFF002A59B2 /* CurrencyController.swift */,
+				6506D4D51E617D310052B57E /* NetworkController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65D7A4D51E6054D6002A59B2 /* ShoppingBasket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D7A4FE1E6054D6002A59B2 /* Build configuration list for PBXNativeTarget "ShoppingBasket" */;
+			buildPhases = (
+				65D7A4D21E6054D6002A59B2 /* Sources */,
+				65D7A4D31E6054D6002A59B2 /* Frameworks */,
+				65D7A4D41E6054D6002A59B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoppingBasket;
+			productName = ShoppingBasket;
+			productReference = 65D7A4D61E6054D6002A59B2 /* ShoppingBasket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65D7A4E91E6054D6002A59B2 /* ShoppingBasketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D7A5011E6054D6002A59B2 /* Build configuration list for PBXNativeTarget "ShoppingBasketTests" */;
+			buildPhases = (
+				65D7A4E61E6054D6002A59B2 /* Sources */,
+				65D7A4E71E6054D6002A59B2 /* Frameworks */,
+				65D7A4E81E6054D6002A59B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65D7A4EC1E6054D6002A59B2 /* PBXTargetDependency */,
+			);
+			name = ShoppingBasketTests;
+			productName = ShoppingBasketTests;
+			productReference = 65D7A4EA1E6054D6002A59B2 /* ShoppingBasketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65D7A4F41E6054D6002A59B2 /* ShoppingBasketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D7A5041E6054D6002A59B2 /* Build configuration list for PBXNativeTarget "ShoppingBasketUITests" */;
+			buildPhases = (
+				65D7A4F11E6054D6002A59B2 /* Sources */,
+				65D7A4F21E6054D6002A59B2 /* Frameworks */,
+				65D7A4F31E6054D6002A59B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65D7A4F71E6054D6002A59B2 /* PBXTargetDependency */,
+			);
+			name = ShoppingBasketUITests;
+			productName = ShoppingBasketUITests;
+			productReference = 65D7A4F51E6054D6002A59B2 /* ShoppingBasketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65D7A4CE1E6054D6002A59B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Dorada App Software Ltd";
+				TargetAttributes = {
+					65D7A4D51E6054D6002A59B2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M48L9PJD97;
+						ProvisioningStyle = Automatic;
+					};
+					65D7A4E91E6054D6002A59B2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M48L9PJD97;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65D7A4D51E6054D6002A59B2;
+					};
+					65D7A4F41E6054D6002A59B2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M48L9PJD97;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65D7A4D51E6054D6002A59B2;
+					};
+				};
+			};
+			buildConfigurationList = 65D7A4D11E6054D6002A59B2 /* Build configuration list for PBXProject "ShoppingBasket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65D7A4CD1E6054D6002A59B2;
+			productRefGroup = 65D7A4D71E6054D6002A59B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65D7A4D51E6054D6002A59B2 /* ShoppingBasket */,
+				65D7A4E91E6054D6002A59B2 /* ShoppingBasketTests */,
+				65D7A4F41E6054D6002A59B2 /* ShoppingBasketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65D7A4D41E6054D6002A59B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D7A50E1E6060BB002A59B2 /* Products.plist in Resources */,
+				6506D4DF1E6184180052B57E /* AddProductTableViewCell.xib in Resources */,
+				6506D50C1E62203D0052B57E /* currencies.json in Resources */,
+				65D7A4E41E6054D6002A59B2 /* LaunchScreen.storyboard in Resources */,
+				65D7A50A1E60609B002A59B2 /* Assets.xcassets in Resources */,
+				6506D50D1E62203F0052B57E /* exchangerates.json in Resources */,
+				65D7A4DF1E6054D6002A59B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D7A4E81E6054D6002A59B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6506D50B1E621E260052B57E /* exchangerates.json in Resources */,
+				6506D5091E621E140052B57E /* currencies.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D7A4F31E6054D6002A59B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65D7A4D21E6054D6002A59B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D7A50C1E6060A1002A59B2 /* ShoppingBasketViewController.swift in Sources */,
+				65D7A5151E6061F2002A59B2 /* Currency.swift in Sources */,
+				65BB46C21E60AB7500D42631 /* AddProductViewController.swift in Sources */,
+				6506D4DE1E6184180052B57E /* AddProductTableViewCell.swift in Sources */,
+				65D7A51C1E606AFF002A59B2 /* CurrencyController.swift in Sources */,
+				6506D4E11E6199660052B57E /* CheckoutViewController.swift in Sources */,
+				6506D4FE1E6207ED0052B57E /* CurrencyFormatter.swift in Sources */,
+				6506D4FC1E61A1800052B57E /* SimpleAlert.swift in Sources */,
+				65D7A51A1E6063BC002A59B2 /* ProductController.swift in Sources */,
+				65D7A5131E6061DB002A59B2 /* Basket.swift in Sources */,
+				65D7A4DA1E6054D6002A59B2 /* BasketAppDelegate.swift in Sources */,
+				65D7A5111E6061A2002A59B2 /* Product.swift in Sources */,
+				6506D4D61E617D310052B57E /* NetworkController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D7A4E61E6054D6002A59B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D7A4EF1E6054D6002A59B2 /* ShoppingBasketTests.swift in Sources */,
+				6506D5071E621A4B0052B57E /* TestNetworkController.swift in Sources */,
+				6506D5001E6217610052B57E /* CurrencyFormatterTests.swift in Sources */,
+				6506D5041E621A270052B57E /* CurrencyControllerTests.swift in Sources */,
+				6506D5021E62193A0052B57E /* ProductControllerTests.swift in Sources */,
+				6506D50F1E6221DE0052B57E /* ProductTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D7A4F11E6054D6002A59B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D7A4FA1E6054D6002A59B2 /* ShoppingBasketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65D7A4EC1E6054D6002A59B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65D7A4D51E6054D6002A59B2 /* ShoppingBasket */;
+			targetProxy = 65D7A4EB1E6054D6002A59B2 /* PBXContainerItemProxy */;
+		};
+		65D7A4F71E6054D6002A59B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65D7A4D51E6054D6002A59B2 /* ShoppingBasket */;
+			targetProxy = 65D7A4F61E6054D6002A59B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65D7A4DD1E6054D6002A59B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65D7A4DE1E6054D6002A59B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65D7A4E21E6054D6002A59B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65D7A4E31E6054D6002A59B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65D7A4FC1E6054D6002A59B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65D7A4FD1E6054D6002A59B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65D7A4FF1E6054D6002A59B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M48L9PJD97;
+				INFOPLIST_FILE = ShoppingBasket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dorada.ShoppingBasket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		65D7A5001E6054D6002A59B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M48L9PJD97;
+				INFOPLIST_FILE = ShoppingBasket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dorada.ShoppingBasket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		65D7A5021E6054D6002A59B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M48L9PJD97;
+				INFOPLIST_FILE = ShoppingBasketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dorada.ShoppingBasketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoppingBasket.app/ShoppingBasket";
+			};
+			name = Debug;
+		};
+		65D7A5031E6054D6002A59B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M48L9PJD97;
+				INFOPLIST_FILE = ShoppingBasketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dorada.ShoppingBasketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoppingBasket.app/ShoppingBasket";
+			};
+			name = Release;
+		};
+		65D7A5051E6054D6002A59B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = M48L9PJD97;
+				INFOPLIST_FILE = ShoppingBasketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dorada.ShoppingBasketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ShoppingBasket;
+			};
+			name = Debug;
+		};
+		65D7A5061E6054D6002A59B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = M48L9PJD97;
+				INFOPLIST_FILE = ShoppingBasketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dorada.ShoppingBasketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ShoppingBasket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65D7A4D11E6054D6002A59B2 /* Build configuration list for PBXProject "ShoppingBasket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D7A4FC1E6054D6002A59B2 /* Debug */,
+				65D7A4FD1E6054D6002A59B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D7A4FE1E6054D6002A59B2 /* Build configuration list for PBXNativeTarget "ShoppingBasket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D7A4FF1E6054D6002A59B2 /* Debug */,
+				65D7A5001E6054D6002A59B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D7A5011E6054D6002A59B2 /* Build configuration list for PBXNativeTarget "ShoppingBasketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D7A5021E6054D6002A59B2 /* Debug */,
+				65D7A5031E6054D6002A59B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D7A5041E6054D6002A59B2 /* Build configuration list for PBXNativeTarget "ShoppingBasketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D7A5051E6054D6002A59B2 /* Debug */,
+				65D7A5061E6054D6002A59B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65D7A4CE1E6054D6002A59B2 /* Project object */;
+}

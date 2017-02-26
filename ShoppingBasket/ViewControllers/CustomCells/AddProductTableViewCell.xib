@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="AddProductTableViewCell" customModule="ShoppingBasket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TuI-Fr-nSm">
+                        <rect key="frame" x="218" y="21.5" width="94" height="29"/>
+                        <connections>
+                            <action selector="stepperChangedWithSender:" destination="KGk-i7-Jjw" eventType="valueChanged" id="GdW-jx-WdN"/>
+                        </connections>
+                    </stepper>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 bags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5d0-Bb-3Y3">
+                        <rect key="frame" x="138" y="25.5" width="72" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="zwg-xM-5Ia"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCG-W7-oMW">
+                        <rect key="frame" x="14" y="25.5" width="130" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aCG-W7-oMW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="ATu-pu-uCP"/>
+                    <constraint firstItem="5d0-Bb-3Y3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="B0c-5q-hZE"/>
+                    <constraint firstItem="TuI-Fr-nSm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="BPf-xJ-7rl"/>
+                    <constraint firstItem="TuI-Fr-nSm" firstAttribute="leading" secondItem="5d0-Bb-3Y3" secondAttribute="trailing" constant="8" id="RaO-Wl-m7e"/>
+                    <constraint firstItem="TuI-Fr-nSm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TpN-NX-gde"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TuI-Fr-nSm" secondAttribute="trailing" id="hDb-Og-8h2"/>
+                    <constraint firstItem="aCG-W7-oMW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lp6-Ic-T17"/>
+                    <constraint firstItem="5d0-Bb-3Y3" firstAttribute="leading" secondItem="aCG-W7-oMW" secondAttribute="trailing" constant="-6" id="uqv-YZ-qNp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="productLabel" destination="aCG-W7-oMW" id="9Ls-sz-fdd"/>
+                <outlet property="quantityLabel" destination="5d0-Bb-3Y3" id="Dvr-wz-2s3"/>
+                <outlet property="stepper" destination="TuI-Fr-nSm" id="G6E-sE-e7F"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="68"/>
+        </tableViewCell>
+    </objects>
+</document>
